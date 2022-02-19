@@ -10,16 +10,28 @@ The purpose of the oscillator is to drive an audio power amplifier feeding into 
 
 The oscilator feedback has been tweaked to reduce the distortion. An output level control has been added because the amplifier input stages were being over-driven with the full output of the oscillator. An inverting buffer have been added to allow the amplifier to operate in bridge mode for increased output, each channel input is driven with opposite phase signals and the output is conected between the two 'hot' outputs. The amplifier output is connected to a variable voltage transformer between the 112% input terminal and the 100% termianl. The resulting AC is available between the 0% and wiper terminals giving a continually variable output between 0 and maximum ( up to approx 230 when the amps are flat out ) higher voltage is available but the amps are clipping then and the waveform becomes square. A frequency trimmer will be added to the final soldered version to allow setting to 400 Hz.
 
+A new transformer has arrived, it is seems to have better voltage stabilization than the variable auto transformer, another advantage is an additional isolated 25 volt secondary.
+
 ![testbench](./images/testbench.jpg)
 
-![autotransformewr](./images/power-amp-auto-transformer.jpg)
+![variable autotransformer](./images/power-amp-auto-transformer.jpg)
 
-![amplifier](./images/amp-collage.jpg)
 
+Dedicated 400Hz transformer
+
+A 400 Hz mains transformer has been found and successfully used in reverse in the AC inverter instead of the variable auto transformer.
+
+The three 6.3 V 2.6 A secondary windings have been wired in series and fed form the amplifier output.
+115 VAC and 25 VAC are available on the secondary windings.
+
+
+![400Hz transformer](./images/400hz-transformer-wrapper.jpg)
+
+![amplifier](./images/amp-collage.jpg) 
 
 ![output](./images/output-160vrms.jpg)
 
-![transformer](./images/transformer-variable.jpg)
+[transformer](./images/transformer-variable.jpg)
 
 
 ### 1st version
